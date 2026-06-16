@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AquaMind — AI Smart Irrigation Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="logo-drop"></span>
+        <span>AquaMind</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#sdg">SDGs</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#canvas">4Ws</a></li>
+        <li><a href="#flowchart">System</a></li>
+        <li><a href="#data">Data</a></li>
+        <li><a href="#ai">AI Design</a></li>
+        <li><a href="#competitive">Competitive</a></li>
+        <li><a href="#future">Future</a></li>
+      </ul>
+      <button class="nav-burger" id="navBurger" aria-label="Menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <canvas id="heroCanvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal">AI Innovation Challenge 2025</div>
+      <h1 class="hero-title reveal">
+        <span class="hero-title-main">AquaMind</span>
+        <span class="hero-title-sub">Smart Irrigation<br>Monitoring System</span>
+      </h1>
+      <p class="hero-desc reveal">Using Machine Learning, Computer Vision, and Conversational AI<br>to end water waste in agriculture — one field at a time.</p>
+      <div class="hero-stats reveal">
+        <div class="hero-stat">
+          <span class="stat-num" data-target="72">0</span><span class="stat-unit">%</span>
+          <span class="stat-label">of freshwater used by agriculture</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-num" data-target="30">0</span><span class="stat-unit">%</span>
+          <span class="stat-label">water saved by AI systems</span>
+        </div>
+        <div class="hero-stat">
+          <span class="stat-num" data-target="25">0</span><span class="stat-unit">%</span>
+          <span class="stat-label">crop yield improvement</span>
+        </div>
+      </div>
+      <div class="hero-sector reveal">
+        <span class="sector-tag">Climate Change</span>
+        <span class="sector-tag">SDG 2 · 6 · 13 · 15</span>
+        <span class="sector-tag">Agriculture</span>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll to explore</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- INTRODUCTION -->
+  <section class="section" id="intro">
+    <div class="container">
+      <div class="section-label reveal">01 — Introduction</div>
+      <h2 class="section-title reveal">The problem we are solving</h2>
+      <div class="intro-grid">
+        <div class="intro-text reveal">
+          <p>Agriculture accounts for <strong>72% of all freshwater withdrawals</strong> globally, yet up to <strong>50% of irrigation water is wasted</strong> due to over-watering, poor scheduling, and zero real-time monitoring.</p>
+          <p>As climate change intensifies droughts and disrupts rainfall patterns — with renewable water availability per person <strong>declining 7% in just a decade</strong> — sustainable water management has become one of the most critical challenges of our time.</p>
+          <p><strong>AquaMind</strong> is an AI-powered smart irrigation system that uses Machine Learning, Computer Vision, IoT sensors, and a Conversational AI Chatbot to monitor crops in real time, predict water needs, and automatically control irrigation — saving water, increasing yields, and making precision farming accessible to every farmer.</p>
+        </div>
+        <div class="intro-cards reveal">
+          <div class="intro-card accent-teal">
+            <div class="icard-icon">💧</div>
+            <div class="icard-val">324B m³</div>
+            <div class="icard-label">freshwater lost globally every year (World Bank, 2025)</div>
+          </div>
+          <div class="intro-card accent-green">
+            <div class="icard-icon">🌱</div>
+            <div class="icard-val">30–50%</div>
+            <div class="icard-label">water savings possible with AI irrigation (ScienceDirect, 2025)</div>
+          </div>
+          <div class="intro-card accent-amber">
+            <div class="icard-icon">👨‍🌾</div>
+            <div class="icard-val">80%</div>
+            <div class="icard-label">of farmers in India are small/marginal with no AI access</div>
+          </div>
+          <div class="intro-card accent-blue">
+            <div class="icard-icon">📈</div>
+            <div class="icard-val">$5.8B</div>
+            <div class="icard-label">smart irrigation market by 2034 (IMARC, 2025)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SDG -->
+  <section class="section section-dark" id="sdg">
+    <div class="container">
+      <div class="section-label reveal">02 — SDGs</div>
+      <h2 class="section-title reveal">Sustainable Development Goals</h2>
+      <div class="sdg-grid">
+        <div class="sdg-card reveal" style="--accent:#D4A017">
+          <div class="sdg-num">2</div>
+          <div class="sdg-info">
+            <div class="sdg-name">Zero Hunger</div>
+            <div class="sdg-desc">Boost crop yields sustainably through precise water and nutrient delivery, ensuring food security for growing populations.</div>
+          </div>
+        </div>
+        <div class="sdg-card reveal" style="--accent:#007EC0">
+          <div class="sdg-num">6</div>
+          <div class="sdg-info">
+            <div class="sdg-name">Clean Water &amp; Sanitation</div>
+            <div class="sdg-desc">Reduce agricultural water waste by 30–50%, preserving freshwater reserves and reducing strain on aquifers and river basins.</div>
+          </div>
+        </div>
+        <div class="sdg-card reveal" style="--accent:#3D7E46">
+          <div class="sdg-num">13</div>
+          <div class="sdg-info">
+            <div class="sdg-name">Climate Action</div>
+            <div class="sdg-desc">Lower the carbon footprint of agriculture by optimising energy used in water pumping and reducing chemical runoff by 35%.</div>
+          </div>
+        </div>
+        <div class="sdg-card reveal" style="--accent:#56A34A">
+          <div class="sdg-num">15</div>
+          <div class="sdg-info">
+            <div class="sdg-name">Life on Land</div>
+            <div class="sdg-desc">Prevent soil degradation, waterlogging, and land erosion caused by inefficient irrigation practices.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section class="section" id="research">
+    <div class="container">
+      <div class="section-label reveal">03 — Research Findings</div>
+      <h2 class="section-title reveal">How AI is used in smart irrigation today</h2>
+
+      <div class="research-grid">
+        <div class="research-block reveal">
+          <h3>Current AI Technologies</h3>
+          <ul class="research-list">
+            <li><span class="bullet-dot"></span>IoT soil moisture sensors feed real-time data to ML prediction models</li>
+            <li><span class="bullet-dot"></span>LSTM neural networks forecast crop water needs 48 hours ahead</li>
+            <li><span class="bullet-dot"></span>Drone + satellite multispectral imaging detects crop stress via CNN models</li>
+            <li><span class="bullet-dot"></span>Random Forest &amp; SVM algorithms optimise irrigation schedules</li>
+            <li><span class="bullet-dot"></span>Cloud platforms enable remote monitoring and valve control</li>
+            <li><span class="bullet-dot"></span>Weather API integration allows proactive, forecast-driven scheduling</li>
+          </ul>
+        </div>
+
+        <div class="research-block reveal">
+          <h3>2025 Key Statistics</h3>
+          <div class="stat-pills">
+            <div class="stat-pill">
+              <span class="sp-val">30–40%</span>
+              <span class="sp-lbl">of irrigation systems globally are now smart-tech enabled (2025)</span>
+            </div>
+            <div class="stat-pill">
+              <span class="sp-val">22%</span>
+              <span class="sp-lbl">water saved by AI climate-smart irrigation (Tandfonline, 2025)</span>
+            </div>
+            <div class="stat-pill">
+              <span class="sp-val">28%</span>
+              <span class="sp-lbl">reduction in fertiliser use via AI-guided systems</span>
+            </div>
+            <div class="stat-pill">
+              <span class="sp-val">40%</span>
+              <span class="sp-lbl">operational efficiency gain on AI-managed farms</span>
+            </div>
+            <div class="stat-pill">
+              <span class="sp-val">35%</span>
+              <span class="sp-lbl">lower nitrogen leakage — major environmental win</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="research-challenge reveal">
+          <div class="challenge-icon">⚠️</div>
+          <div>
+            <h3>Major Challenge Identified</h3>
+            <p>Despite proven results, most AI irrigation tools are built for large agribusinesses. Small and marginal farmers — over <strong>80% of all farmers in India</strong> — are excluded due to high hardware costs, poor digital literacy, and zero local-language support. The technology gap is widening as climate stress intensifies. <strong>AquaMind targets this gap directly.</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tags-row reveal">
+        <span class="tag">IoT Sensors</span><span class="tag">Machine Learning</span><span class="tag">Computer Vision</span><span class="tag">LSTM Models</span><span class="tag">Satellite Imaging</span><span class="tag">Cloud Platforms</span><span class="tag">Precision Farming</span><span class="tag">Water Scarcity</span><span class="tag">Drip Irrigation</span><span class="tag">Random Forest</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4Ws CANVAS -->
+  <section class="section section-muted" id="canvas">
+    <div class="container">
+      <div class="section-label reveal">04 — Framework</div>
+      <h2 class="section-title reveal">4Ws Canvas</h2>
+      <p class="section-intro reveal">The strategic foundation of the AquaMind solution — who it serves, what it does, where it operates, and why it matters.</p>
+      <div class="w4-grid">
+        <div class="w4-card w4-who reveal">
+          <div class="w4-icon">👥</div>
+          <div class="w4-label">WHO</div>
+          <h3>Users &amp; Beneficiaries</h3>
+          <p>Small and marginal farmers, agricultural extension workers, rural cooperatives, and government agriculture departments. Ultimately benefits entire food-dependent communities facing water stress.</p>
+        </div>
+        <div class="w4-card w4-what reveal">
+          <div class="w4-icon">⚙️</div>
+          <div class="w4-label">WHAT</div>
+          <h3>The Solution</h3>
+          <p>An AI-powered irrigation monitoring system using soil sensors, drone imaging, ML prediction models, and a multilingual voice chatbot to automate and optimise water delivery to crops in real time.</p>
+        </div>
+        <div class="w4-card w4-where reveal">
+          <div class="w4-icon">📍</div>
+          <div class="w4-label">WHERE</div>
+          <h3>Target Regions</h3>
+          <p>Primary: Rural agricultural fields in water-stressed regions of India, Sub-Saharan Africa, and Southeast Asia. Secondary: Any drought-prone region with smallholder farming communities.</p>
+        </div>
+        <div class="w4-card w4-why reveal">
+          <div class="w4-icon">❓</div>
+          <div class="w4-label">WHY</div>
+          <h3>The Urgency</h3>
+          <p>Renewable water availability declined 7% in a decade. Traditional irrigation wastes 50% of water. Climate change is making this worse every year. AI-optimised irrigation is no longer a luxury — it is a necessity for food security.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOWCHART -->
+  <section class="section" id="flowchart">
+    <div class="container">
+      <div class="section-label reveal">05 — Architecture</div>
+      <h2 class="section-title reveal">System Flowchart</h2>
+      <p class="section-intro reveal">Data flows from the physical world through AI intelligence layers to real-world action — and feeds back to learn with every cycle.</p>
+
+      <div class="flow-diagram reveal">
+        <!-- Layer 1 -->
+        <div class="flow-layer">
+          <div class="layer-label">Input Layer — Data Collection</div>
+          <div class="flow-row">
+            <div class="flow-node node-teal">
+              <div class="fn-icon">🌱</div>
+              <div class="fn-title">Soil Sensors</div>
+              <div class="fn-sub">Moisture · Nutrients · pH</div>
+            </div>
+            <div class="flow-node node-teal">
+              <div class="fn-icon">🌦️</div>
+              <div class="fn-title">Weather API</div>
+              <div class="fn-sub">Forecast · Rainfall · Temp</div>
+            </div>
+            <div class="flow-node node-teal">
+              <div class="fn-icon">🚁</div>
+              <div class="fn-title">Drone Camera</div>
+              <div class="fn-sub">Aerial crop imaging</div>
+            </div>
+            <div class="flow-node node-teal">
+              <div class="fn-icon">🛰️</div>
+              <div class="fn-title">Satellite Data</div>
+              <div class="fn-sub">NDVI · Land moisture</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flow-arrow-down">
+          <div class="arrow-line"></div>
+          <div class="arrow-head">▼</div>
+        </div>
+
+        <!-- Layer 2 -->
+        <div class="flow-layer">
+          <div class="layer-label">AI Processing Layer</div>
+          <div class="flow-row">
+            <div class="flow-node node-purple">
+              <div class="fn-icon">🧠</div>
+              <div class="fn-title">ML Prediction</div>
+              <div class="fn-sub">LSTM — 48hr water forecast</div>
+            </div>
+            <div class="flow-node node-purple">
+              <div class="fn-icon">👁️</div>
+              <div class="fn-title">Computer Vision</div>
+              <div class="fn-sub">Crop stress detection (CNN)</div>
+            </div>
+            <div class="flow-node node-purple">
+              <div class="fn-icon">📊</div>
+              <div class="fn-title">Recommendation AI</div>
+              <div class="fn-sub">Personalised schedules</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flow-arrow-down">
+          <div class="arrow-line"></div>
+          <div class="arrow-head">▼</div>
+        </div>
+
+        <!-- Layer 3 -->
+        <div class="flow-layer">
+          <div class="layer-label">Decision Layer</div>
+          <div class="flow-row flow-row-single">
+            <div class="flow-node node-amber flow-node-wide">
+              <div class="fn-icon">⚡</div>
+              <div class="fn-title">AI Decision Core</div>
+              <div class="fn-sub">Irrigate now · Wait · Alert farmer · Adjust amount · Escalate</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flow-arrow-down">
+          <div class="arrow-line"></div>
+          <div class="arrow-head">▼</div>
+        </div>
+
+        <!-- Layer 4 -->
+        <div class="flow-layer">
+          <div class="layer-label">Output / Action Layer</div>
+          <div class="flow-row">
+            <div class="flow-node node-coral">
+              <div class="fn-icon">🚿</div>
+              <div class="fn-title">Auto Valve</div>
+              <div class="fn-sub">Opens/closes irrigation</div>
+            </div>
+            <div class="flow-node node-coral">
+              <div class="fn-icon">📱</div>
+              <div class="fn-title">Farmer App</div>
+              <div class="fn-sub">Push alerts · Reports</div>
+            </div>
+            <div class="flow-node node-coral">
+              <div class="fn-icon">🤖</div>
+              <div class="fn-title">AI Chatbot</div>
+              <div class="fn-sub">Voice Q&amp;A in local language</div>
+            </div>
+            <div class="flow-node node-coral">
+              <div class="fn-icon">📺</div>
+              <div class="fn-title">Dashboard</div>
+              <div class="fn-sub">Web / mobile UI</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="feedback-loop reveal">
+          <div class="feedback-text">↻ Continuous feedback loop — the system learns and improves with every irrigation cycle</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DATA VISUALIZATIONS -->
+  <section class="section section-muted" id="data">
+    <div class="container">
+      <div class="section-label reveal">06 — Data</div>
+      <h2 class="section-title reveal">Sample Data &amp; Visualizations</h2>
+      <p class="section-intro reveal">Simulated field data showing the measurable impact of AquaMind's AI versus traditional irrigation methods.</p>
+
+      <div class="metrics-row reveal">
+        <div class="metric-card">
+          <div class="mc-val green" data-target="30">0</div><div class="mc-unit">%</div>
+          <div class="mc-label">Water saved (AI systems, 2025)</div>
+        </div>
+        <div class="metric-card">
+          <div class="mc-val green" data-target="25">0</div><div class="mc-unit">%</div>
+          <div class="mc-label">Crop yield improvement</div>
+        </div>
+        <div class="metric-card">
+          <div class="mc-val blue" data-target="40">0</div><div class="mc-unit">%</div>
+          <div class="mc-label">Operational efficiency gain</div>
+        </div>
+        <div class="metric-card">
+          <div class="mc-val amber" data-target="35">0</div><div class="mc-unit">%</div>
+          <div class="mc-label">Lower nitrogen runoff</div>
+        </div>
+      </div>
+
+      <div class="charts-grid">
+        <div class="chart-card reveal">
+          <div class="chart-title">Monthly Water Usage: Traditional vs AquaMind (litres/hectare)</div>
+          <div class="chart-legend-row">
+            <span class="legend-item"><span class="ld" style="background:#3B8BD4"></span>Traditional</span>
+            <span class="legend-item"><span class="ld" style="background:#1D9E75"></span>AquaMind AI</span>
+          </div>
+          <div class="chart-wrap"><canvas id="waterChart"></canvas></div>
+        </div>
+        <div class="chart-card reveal">
+          <div class="chart-title">Water Usage Breakdown with AI</div>
+          <div class="chart-wrap chart-wrap-sm"><canvas id="pieChart"></canvas></div>
+        </div>
+        <div class="chart-card chart-card-full reveal">
+          <div class="chart-title">Soil Moisture Levels Over 7 Days (%) — with optimal range</div>
+          <div class="chart-legend-row">
+            <span class="legend-item"><span class="ld" style="background:#1D9E75"></span>Soil moisture</span>
+            <span class="legend-item"><span class="ld ld-dash" style="border-color:#BA7517"></span>Min optimal</span>
+            <span class="legend-item"><span class="ld ld-dash" style="border-color:#185FA5"></span>Max optimal</span>
+          </div>
+          <div class="chart-wrap"><canvas id="soilChart"></canvas></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI SOLUTION DESIGN -->
+  <section class="section" id="ai">
+    <div class="container">
+      <div class="section-label reveal">07 — AI Design</div>
+      <h2 class="section-title reveal">AquaMind's AI Solution Design</h2>
+      <p class="section-intro reveal">Five AI technologies working in concert — each solving a different layer of the irrigation problem.</p>
+
+      <div class="ai-grid">
+        <div class="ai-card reveal" data-delay="0">
+          <div class="ai-num">01</div>
+          <div class="ai-icon-wrap" style="--ai-color:#1D9E75">🧠</div>
+          <h3>Machine Learning</h3>
+          <div class="ai-subtitle">Irrigation Prediction Engine</div>
+          <p>LSTM neural networks trained on historical soil moisture, weather patterns, and crop growth data predict exactly how much water each field zone needs — up to 48 hours in advance. Prevents both under-watering and over-watering with up to 93% model accuracy.</p>
+          <div class="ai-tag">LSTM · Random Forest · SVM</div>
+        </div>
+
+        <div class="ai-card reveal" data-delay="100">
+          <div class="ai-num">02</div>
+          <div class="ai-icon-wrap" style="--ai-color:#185FA5">👁️</div>
+          <h3>Computer Vision</h3>
+          <div class="ai-subtitle">Crop Stress Detection</div>
+          <p>Drone-mounted cameras capture multispectral images processed by a CNN model that analyses colour patterns to detect drought stress, disease, and nutrient deficiency — before they become visible to the human eye, enabling early intervention.</p>
+          <div class="ai-tag">CNN · Multispectral · NDVI</div>
+        </div>
+
+        <div class="ai-card reveal" data-delay="200">
+          <div class="ai-num">03</div>
+          <div class="ai-icon-wrap" style="--ai-color:#854F0B">🤖</div>
+          <h3>Chatbot</h3>
+          <div class="ai-subtitle">Multilingual Farmer Assistant</div>
+          <p>A multilingual AI chatbot (Hindi, Tamil, Swahili, and more) answers questions like "Should I water today?" or "Why are my crops yellow?" in plain language — making AI insights accessible without any dashboard or data literacy required.</p>
+          <div class="ai-tag">NLP · Multilingual · RAG</div>
+        </div>
+
+        <div class="ai-card reveal" data-delay="300">
+          <div class="ai-num">04</div>
+          <div class="ai-icon-wrap" style="--ai-color:#993C1D">🎙️</div>
+          <h3>Speech Recognition</h3>
+          <div class="ai-subtitle">Voice-First Interface</div>
+          <p>Many small farmers have low literacy. AquaMind supports full voice interaction — farmers speak naturally in their local dialect and receive spoken audio responses, making AI accessible to users who cannot read or type on a screen.</p>
+          <div class="ai-tag">ASR · Local Dialects · TTS</div>
+        </div>
+
+        <div class="ai-card reveal" data-delay="400">
+          <div class="ai-num">05</div>
+          <div class="ai-icon-wrap" style="--ai-color:#3B6D11">📋</div>
+          <h3>Recommendation System</h3>
+          <div class="ai-subtitle">Smart Personalised Scheduling</div>
+          <p>A collaborative filtering model learns from thousands of farms across similar soil types, crop varieties, and climate zones to recommend personalised irrigation schedules, fertiliser timing, and crop rotation strategies for each unique field.</p>
+          <div class="ai-tag">Collaborative Filtering · Personalisation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETITIVE LANDSCAPE -->
+  <section class="section section-dark" id="competitive">
+    <div class="container">
+      <div class="section-label reveal">08 — Market</div>
+      <h2 class="section-title reveal">Competitive Landscape</h2>
+      <p class="section-intro reveal">AquaMind exists in a fast-growing $5.8B market. Here's how the current players compare — and where the gap AquaMind fills actually sits.</p>
+
+      <div class="comp-cards reveal">
+
+        <div class="comp-card">
+          <div class="comp-header">
+            <div class="comp-flag">🇮🇱</div>
+            <div>
+              <div class="comp-name">Netafim GrowSphere</div>
+              <div class="comp-origin">Israel · Enterprise Leader</div>
+            </div>
+            <div class="comp-tier tier-enterprise">Enterprise</div>
+          </div>
+          <p class="comp-desc">World's largest drip irrigation company. GrowSphere platform combines smart controllers, networked moisture sensors, and cloud platforms for high-value crops. Self-adjusts per weather, time of day, or soil moisture.</p>
+          <div class="comp-features">
+            <span class="cf cf-yes">✓ IoT sensors</span>
+            <span class="cf cf-yes">✓ Auto scheduling</span>
+            <span class="cf cf-yes">✓ Cloud platform</span>
+            <span class="cf cf-no">✗ AI chatbot</span>
+            <span class="cf cf-no">✗ Voice support</span>
+            <span class="cf cf-no">✗ Small farmers</span>
+          </div>
+          <div class="comp-price">Pricing: $150 – $50,000+ per system</div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-header">
+            <div class="comp-flag">🇺🇸</div>
+            <div>
+              <div class="comp-name">CropX</div>
+              <div class="comp-origin">USA/Israel · AI Startup</div>
+            </div>
+            <div class="comp-tier tier-mid">Mid-Market</div>
+          </div>
+          <p class="comp-desc">AI-driven soil sensing and analytics for precise irrigation. Cloud-based recommendations optimise water use, cut costs, and enhance yield. Saves up to 25% water. Integrates with most irrigation hardware.</p>
+          <div class="comp-features">
+            <span class="cf cf-yes">✓ AI analytics</span>
+            <span class="cf cf-yes">✓ Soil sensors</span>
+            <span class="cf cf-yes">✓ Cloud dashboard</span>
+            <span class="cf cf-no">✗ Computer vision</span>
+            <span class="cf cf-no">✗ Voice/chatbot</span>
+            <span class="cf cf-no">✗ Smallholders</span>
+          </div>
+          <div class="comp-price">Pricing: $300 – $800 per sensor system</div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-header">
+            <div class="comp-flag">🇺🇸</div>
+            <div>
+              <div class="comp-name">Arable Mark 3</div>
+              <div class="comp-origin">USA · Research-Grade</div>
+            </div>
+            <div class="comp-tier tier-mid">Mid-Market</div>
+          </div>
+          <p class="comp-desc">Combines real-time weather, soil, and crop data in an AI-powered farm analytics platform. Excellent for irrigation scheduling and disease prediction. Reduces water use by up to 35% in research settings.</p>
+          <div class="comp-features">
+            <span class="cf cf-yes">✓ Multi-sensor</span>
+            <span class="cf cf-yes">✓ ML scheduling</span>
+            <span class="cf cf-yes">✓ Disease prediction</span>
+            <span class="cf cf-no">✗ Voice interface</span>
+            <span class="cf cf-no">✗ Low-cost option</span>
+            <span class="cf cf-no">✗ Local language</span>
+          </div>
+          <div class="comp-price">Pricing: $500 – $1,200 per device</div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-header">
+            <div class="comp-flag">🇮🇳</div>
+            <div>
+              <div class="comp-name">Farmonaut Jeevn AI</div>
+              <div class="comp-origin">India · Satellite-First</div>
+            </div>
+            <div class="comp-tier tier-low">Affordable</div>
+          </div>
+          <p class="comp-desc">India's leading agri-satellite platform. Jeevn AI uses satellite imagery and AI to cut water use by 30–40%. Web and mobile access without expensive local hardware. Most accessible platform for developing markets.</p>
+          <div class="comp-features">
+            <span class="cf cf-yes">✓ Satellite AI</span>
+            <span class="cf cf-yes">✓ Affordable</span>
+            <span class="cf cf-yes">✓ Mobile access</span>
+            <span class="cf cf-no">✗ No drone CV</span>
+            <span class="cf cf-no">✗ No voice bot</span>
+            <span class="cf cf-no">✗ No dialect support</span>
+          </div>
+          <div class="comp-price">Pricing: $30 – $100/month subscription</div>
+        </div>
+
+        <div class="comp-card">
+          <div class="comp-header">
+            <div class="comp-flag">🇺🇸</div>
+            <div>
+              <div class="comp-name">IBM Watson Agriculture</div>
+              <div class="comp-origin">USA · Tech Giant</div>
+            </div>
+            <div class="comp-tier tier-enterprise">Enterprise</div>
+          </div>
+          <p class="comp-desc">Fuses AI, IoT, and weather data — supporting farmers with precision irrigation, smart sensors, and actionable alerts. Partnership with Texas A&M AgriLife for research-backed recommendations at scale.</p>
+          <div class="comp-features">
+            <span class="cf cf-yes">✓ Deep AI/IoT</span>
+            <span class="cf cf-yes">✓ Weather fusion</span>
+            <span class="cf cf-yes">✓ Enterprise scale</span>
+            <span class="cf cf-no">✗ Very expensive</span>
+            <span class="cf cf-no">✗ No voice layer</span>
+            <span class="cf cf-no">✗ Not for smallholders</span>
+          </div>
+          <div class="comp-price">Pricing: Enterprise contract (high cost)</div>
+        </div>
+
+        <div class="comp-card comp-card-aquamind">
+          <div class="comp-header">
+            <div class="comp-flag">🌍</div>
+            <div>
+              <div class="comp-name">AquaMind <span class="our-badge">Our Solution</span></div>
+              <div class="comp-origin">Global · Smallholder-First</div>
+            </div>
+            <div class="comp-tier tier-low">Accessible</div>
+          </div>
+          <p class="comp-desc">The only solution combining all five AI layers with a voice-first, multilingual chatbot designed specifically for small and marginal farmers. Satellite + drone CV + ML + speech — no tech literacy required.</p>
+          <div class="comp-features">
+            <span class="cf cf-yes">✓ ML + CV + IoT</span>
+            <span class="cf cf-yes">✓ Multilingual chatbot</span>
+            <span class="cf cf-yes">✓ Voice/speech AI</span>
+            <span class="cf cf-yes">✓ Smallholder-first</span>
+            <span class="cf cf-yes">✓ Low cost target</span>
+            <span class="cf cf-yes">✓ Local dialects</span>
+          </div>
+          <div class="comp-price">Target: &lt;$20/month for smallholder farmers</div>
+        </div>
+
+      </div>
+
+      <!-- Comparison Table -->
+      <div class="comp-table-wrap reveal">
+        <h3 class="table-title">Feature Comparison Matrix</h3>
+        <div class="comp-table-scroll">
+          <table class="comp-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th>Netafim</th>
+                <th>CropX</th>
+                <th>Arable</th>
+                <th>Farmonaut</th>
+                <th>IBM Watson</th>
+                <th class="th-aquamind">AquaMind</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>ML Prediction</td><td class="partial">◑</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td class="td-aquamind">✓</td></tr>
+              <tr><td>Computer Vision</td><td>✗</td><td>✗</td><td class="partial">◑</td><td class="partial">◑</td><td class="partial">◑</td><td class="td-aquamind">✓</td></tr>
+              <tr><td>Multilingual Chatbot</td><td>✗</td><td>✗</td><td>✗</td><td>✗</td><td>✗</td><td class="td-aquamind">✓</td></tr>
+              <tr><td>Voice / Speech AI</td><td>✗</td><td>✗</td><td>✗</td><td>✗</td><td>✗</td><td class="td-aquamind">✓</td></tr>
+              <tr><td>Recommendation System</td><td class="partial">◑</td><td>✓</td><td>✓</td><td class="partial">◑</td><td>✓</td><td class="td-aquamind">✓</td></tr>
+              <tr><td>Targets Small Farmers</td><td>✗</td><td class="partial">◑</td><td>✗</td><td>✓</td><td>✗</td><td class="td-aquamind">✓</td></tr>
+              <tr><td>Drone Integration</td><td>✗</td><td>✗</td><td>✗</td><td>✗</td><td>✗</td><td class="td-aquamind">✓</td></tr>
+              <tr><td>Offline / Low connectivity</td><td>✗</td><td>✗</td><td>✗</td><td class="partial">◑</td><td>✗</td><td class="td-aquamind">✓</td></tr>
+              <tr><td>Affordable (&lt;$50/mo)</td><td>✗</td><td>✗</td><td>✗</td><td>✓</td><td>✗</td><td class="td-aquamind">✓</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-legend">
+          <span>✓ Full support &nbsp;|&nbsp; ◑ Partial &nbsp;|&nbsp; ✗ Not available</span>
+        </div>
+      </div>
+
+      <div class="differentiator reveal">
+        <div class="diff-icon">🎯</div>
+        <div>
+          <h3>AquaMind's Key Differentiator</h3>
+          <p>No current competitor combines <strong>drone computer vision + multilingual voice chatbot + speech recognition</strong> in a solution priced for smallholder farmers. This gap affects over <strong>500 million small farmers globally</strong> — the people most impacted by water scarcity and least served by existing AI tools.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUTURE IMPROVEMENTS -->
+  <section class="section" id="future">
+    <div class="container">
+      <div class="section-label reveal">09 — Roadmap</div>
+      <h2 class="section-title reveal">Future Improvements</h2>
+      <p class="section-intro reveal">AquaMind's development roadmap — from MVP to global scale.</p>
+
+      <div class="future-timeline">
+        <div class="future-item reveal">
+          <div class="fi-marker">
+            <div class="fi-dot"></div>
+            <div class="fi-line"></div>
+          </div>
+          <div class="fi-content">
+            <div class="fi-phase">Phase 2 — Year 1</div>
+            <h3>Solar-Powered Sensor Nodes</h3>
+            <p>Deploy off-grid solar-powered IoT sensor packages so AquaMind works in rural areas with no electricity infrastructure — the primary barrier for the world's most water-stressed farming communities.</p>
+          </div>
+        </div>
+        <div class="future-item reveal">
+          <div class="fi-marker">
+            <div class="fi-dot"></div>
+            <div class="fi-line"></div>
+          </div>
+          <div class="fi-content">
+            <div class="fi-phase">Phase 2 — Year 1</div>
+            <h3>Satellite-Only Mode</h3>
+            <p>Use freely available satellite data (Sentinel-2, MODIS) to serve farmers who cannot afford physical sensors, dramatically expanding accessibility at near-zero hardware cost.</p>
+          </div>
+        </div>
+        <div class="future-item reveal">
+          <div class="fi-marker">
+            <div class="fi-dot"></div>
+            <div class="fi-line"></div>
+          </div>
+          <div class="fi-content">
+            <div class="fi-phase">Phase 3 — Year 2</div>
+            <h3>Pest &amp; Disease AI Module</h3>
+            <p>Expand computer vision to detect 50+ crop diseases and pest infestations, with the chatbot delivering organic treatment recommendations in the farmer's local dialect.</p>
+          </div>
+        </div>
+        <div class="future-item reveal">
+          <div class="fi-marker">
+            <div class="fi-dot"></div>
+            <div class="fi-line"></div>
+          </div>
+          <div class="fi-content">
+            <div class="fi-phase">Phase 3 — Year 2</div>
+            <h3>Blockchain Water Credit System</h3>
+            <p>Farmers who save water earn tradeable digital credits verified on-chain — creating a market incentive for conservation at scale, and connecting sustainable farmers to green finance.</p>
+          </div>
+        </div>
+        <div class="future-item reveal">
+          <div class="fi-marker">
+            <div class="fi-dot"></div>
+          </div>
+          <div class="fi-content">
+            <div class="fi-phase">Phase 4 — Year 3+</div>
+            <h3>Regional Climate Intelligence Platform</h3>
+            <p>Aggregate anonymised farm data into a regional water intelligence platform, helping governments and NGOs plan irrigation policy, predict water crises, and allocate resources proactively.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIBLIOGRAPHY -->
+  <section class="section section-muted" id="bibliography">
+    <div class="container">
+      <div class="section-label reveal">10 — Sources</div>
+      <h2 class="section-title reveal">Bibliography</h2>
+      <div class="bib-grid reveal">
+        <div class="bib-item">1. FAO / UN News (December 2025). <em>UN sounds alarm over rising demands on water resources as scarcity increases.</em> news.un.org</div>
+        <div class="bib-item">2. World Bank (November 2025). <em>World Annual Fresh Water Losses Could Supply 280 Million People.</em> worldbank.org</div>
+        <div class="bib-item">3. ScienceDirect (May 2025). <em>AI-driven irrigation systems for sustainable water management: A systematic review.</em> doi.org/10.1016/S2772-3755</div>
+        <div class="bib-item">4. Tandfonline (October 2025). <em>Implementing AI and ML for optimized crop management: a systematic review.</em> tandfonline.com/doi/10.1080</div>
+        <div class="bib-item">5. Farmonaut (2025). <em>Smart Agriculture Irrigation System: Auto Automation 2025.</em> farmonaut.com</div>
+        <div class="bib-item">6. Kunt, Y.E. &amp; Altinoluk, H.S. (August 2025). <em>Development of a Smart Autonomous Irrigation System Using IoT and AI.</em> arxiv.org/abs/2506.11835</div>
+        <div class="bib-item">7. MarketsandMarkets (2025). <em>Smart Irrigation Market Size Report 2025–2030.</em> marketsandmarkets.com</div>
+        <div class="bib-item">8. E3S Web of Conferences (2025). <em>Artificial intelligence for smart irrigation: Reducing water waste.</em> e3s-conferences.org</div>
+        <div class="bib-item">9. United Nations (2025). <em>Sustainable Development Goals: SDG 2, 6, 13, 15.</em> sdgs.un.org</div>
+        <div class="bib-item">10. IMARC Group (2025). <em>Smart Irrigation Market Analysis &amp; Growth Outlook, 2034.</em> imarcgroup.com</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-drop"></span>
+          <span>AquaMind</span>
+        </div>
+        <div class="footer-meta">AI Innovation Challenge · Climate Change Sector · 2025</div>
+        <div class="footer-sdgs">SDG 2 · SDG 6 · SDG 13 · SDG 15</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
